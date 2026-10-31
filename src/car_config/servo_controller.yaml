@@ -1,0 +1,17 @@
+/**:
+  ros__parameters:
+    base_frame: ''
+
+    joints:
+      joint1: { id: 1, init: 1500, min: 900,  max: 2100, angle_range: 180 }
+      joint2: { id: 2, init: 1500, min: 1000, max: 2000, angle_range: 180 }
+      joint3: { id: 3, init: 1500, min: 800,  max: 2200, angle_range: 180 }
+      joint4: { id: 4, init: 1500, min: 800,  max: 2200, angle_range: 180 }
+      joint5: { id: 5, init: 1500, min: 1200, max: 2000, angle_range: 180 }
+      joint6: { id: 6, init: 1500, min: 1500, max: 2500, angle_range: 180 }
+
+    arm_controller:
+      joints: [joint1, joint2, joint3, joint4, joint5]
+
+    gripper_controller:
+      joints: [joint6]

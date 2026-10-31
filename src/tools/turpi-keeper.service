@@ -1,0 +1,23 @@
+[Unit]
+Description=TurPi AGH Keeper (device watchdog for turpi-01)
+Documentation=file:/home/pi/turbopi_agh/KEEPER.md
+# 等 Docker 起来（容器 turbopi 必须先存在）
+After=docker.service network-online.target
+Wants=network-online.target
+Requires=docker.service
+
+[Service]
+Type=simple
+User=root
+Environment=TURPI_HUB=ws://192.168.3.149:4180
+ExecStartPre=/bin/bash -c 'for i in $(seq 1 30); do docker inspect turbopi >/dev/null 2>&1 && exit 0; sleep 2; done; exit 1'
+ExecStart=/bin/bash /home/pi/turbopi_agh/keeper.sh ${TURPI_HUB}
+Restart=always
+RestartSec=20
+# 日志进 journald，用 journalctl -u turpi-keeper -f 看
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=turpi-keeper
+
+[Install]
+WantedBy=multi-user.target

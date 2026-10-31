@@ -131,22 +131,30 @@ HomeGuard **故意保留硬件限制**而非掩盖它们：
 ## 演示视频
 
 <p align="center">
-  <a href="https://www.bilibili.com/video/BV1xxxxxx">
-    <img src="docs/assets/demo-thumbnail.svg" alt="HomeGuard演示视频：自主绿植巡检任务" width="100%" />
+  <a href="https://www.bilibili.com/video/BV1j3pL6hELh/">
+    <img src="docs/assets/demo-thumbnail.svg" alt="HomeGuard演示视频合集" width="100%" />
   </a>
 </p>
 
-> **演示视频：** [自主绿植巡检任务](https://www.bilibili.com/video/BV1xxxxxx)（3分40秒）  
-> **时长：** 3分40秒  
-> **内容：** 从自然语言输入到结构化结论的完整任务执行
+> **平台：** Bilibili（哔哩哔哩）  
+> **内容：** 真实物理机器人（TurboPi）自主巡检任务执行录像
+
+### 视频列表
+
+| # | 标题 | 链接 | 描述 |
+|---|---|---|---|
+| 1 | 演示视频 1 | [BV1j3pL6hELh](https://www.bilibili.com/video/BV1j3pL6hELh/) | 自主巡检执行演示 |
+| 2 | 演示视频 2 | [BV1ZaWw6aErj](https://www.bilibili.com/video/BV1ZaWw6aErj/) | 视觉推理任务执行 |
+| 3 | 演示视频 3 | [BV1BaWw6aEVc](https://www.bilibili.com/video/BV1BaWw6aEVc/) | 导航与设备调用演示 |
+| 4 | 演示视频 4 | [BV1BaWw6aEwh](https://www.bilibili.com/video/BV1BaWw6aEwh/) | 失败恢复与自我纠错 |
 
 ### 演示内容
 
-| 时间戳 | 段落 | 内容 |
-|---|---|---|
-| 0:00–0:30 | **任务输入** | 自然语言命令：「寻找绿萝，靠近它，查看绿萝上面插的绿色的湿度计显示的刻度，看看是否缺水，不依赖定位」 |
-| 0:30–1:00 | **任务规划** | 模型调用 `list_devices` → `read_device(pose)` 确认设备在线和数据新鲜度 |
-| 1:00–2:00 | **自主导航** | 机器人通过 `drive` / `turn` / `change_view` 向目标移动；所有调用经 AgnesHub 校验 |
+| 段落 | 内容 |
+|---|---|
+| **任务输入** | 自然语言命令：「寻找绿萝，靠近它，查看绿萝上面插的绿色的湿度计显示的刻度，看看是否缺水，不依赖定位」 |
+| **任务规划** | 模型调用 `list_devices` → `read_device(pose)` 确认设备在线和数据新鲜度 |
+| **自主导航** | 机器人通过 `drive` / `turn` / `change_view` 向目标移动；所有调用经 AgnesHub 校验 |
 | 2:00–2:40 | **视觉推理 + 失败** | `read_device(front)` 返回真实摄像头图像；`aim_camera` 失败（云台硬件限制）；模型降级到 `change_view` |
 | 2:40–3:20 | **结果验证** | 机器人读取湿度计指针位置；输出带证据的结构化结论 |
 | 3:20–3:40 | **限制说明** | 诚实披露：云台不可用、无编码器、低压保护已禁用 |

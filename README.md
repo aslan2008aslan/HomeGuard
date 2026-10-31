@@ -128,25 +128,33 @@ The model outputs **structured judgments** rather than free-text conclusions:
 
 When confidence falls below threshold, the system automatically adjusts camera angle and retries—demonstrating **self-correction under uncertainty**.
 
-## Demo Video
+## Demo Videos
 
 <p align="center">
-  <a href="https://www.bilibili.com/video/BV1xxxxxx">
-    <img src="docs/assets/demo-thumbnail.svg" alt="HomeGuard demo video: autonomous plant inspection task" width="100%" />
+  <a href="https://www.bilibili.com/video/BV1j3pL6hELh/">
+    <img src="docs/assets/demo-thumbnail.svg" alt="HomeGuard demo video playlist on Bilibili" width="100%" />
   </a>
 </p>
 
-> **Demo Video:** [Autonomous Plant Inspection Task](https://www.bilibili.com/video/BV1xxxxxx) (3:40)  
-> **Duration:** 3 minutes 40 seconds  
-> **Content:** Full task execution from natural language input to structured conclusion
+> **Platform:** Bilibili (哔哩哔哩)  
+> **Content:** Real execution recordings of the autonomous plant inspection task on a physical TurboPi robot
 
-### What the Demo Shows
+### Video List
 
-| Timestamp | Segment | Content |
-|---|---|---|
-| 0:00–0:30 | **Task Input** | Natural language command: "Find the plant, approach it, check the green humidity meter, determine if it needs watering, without relying on localization" |
-| 0:30–1:00 | **Task Planning** | Model calls `list_devices` → `read_device(pose)` to confirm device online and data freshness |
-| 1:00–2:00 | **Autonomous Navigation** | Robot moves toward target via `drive` / `turn` / `change_view`; all calls validated by AgnesHub |
+| # | Title | Link | Description |
+|---|---|---|---|
+| 1 | Demo Video 1 | [BV1j3pL6hELh](https://www.bilibili.com/video/BV1j3pL6hELh/) | Autonomous inspection execution |
+| 2 | Demo Video 2 | [BV1ZaWw6aErj](https://www.bilibili.com/video/BV1ZaWw6aErj/) | Task execution with visual reasoning |
+| 3 | Demo Video 3 | [BV1BaWw6aEVc](https://www.bilibili.com/video/BV1BaWw6aEVc/) | Navigation and device call demonstration |
+| 4 | Demo Video 4 | [BV1BaWw6aEwh](https://www.bilibili.com/video/BV1BaWw6aEwh/) | Failure recovery and self-correction |
+
+### What the Demos Show
+
+| Segment | Content |
+|---|---|
+| **Task Input** | Natural language command: "Find the plant, approach it, check the green humidity meter, determine if it needs watering, without relying on localization" |
+| **Task Planning** | Model calls `list_devices` → `read_device(pose)` to confirm device online and data freshness |
+| **Autonomous Navigation** | Robot moves toward target via `drive` / `turn` / `change_view`; all calls validated by AgnesHub |
 | 2:00–2:40 | **Visual Reasoning + Failure** | `read_device(front)` returns real camera image; `aim_camera` fails (gimbal hardware limitation); model degrades to `change_view` |
 | 2:40–3:20 | **Result Verification** | Robot reads humidity meter pointer position; outputs structured conclusion with evidence |
 | 3:20–3:40 | **Limitations Disclosure** | Honest disclosure: gimbal unavailable, no encoders, low-voltage protection disabled |

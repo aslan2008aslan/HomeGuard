@@ -509,6 +509,12 @@ All source code has been verified:
 - ✅ Declared capabilities match real device
 - ✅ Reconnection patches included
 
+## Hackathon Project Note
+
+> **This is a hackathon competition project.** HomeGuard was developed during the 2026 Jiangsu Province AI+ Science and Engineering Innovation Practice Hackathon. Due to the tight timeline and limited development window, the current implementation focuses on validating the core framework with a single scenario (plant inspection). While functional, the system is not yet complete and has known hardware and software limitations documented below.
+>
+> **We are committed to continued development.** After the competition, we plan to iteratively expand HomeGuard with more home inspection scenarios, improve hardware integration, and address the current limitations. This project represents the foundation of a long-term vision for intelligent home service robots, and we welcome collaboration and feedback from the community.
+
 ## Current Status and Roadmap
 
 ### Current Status (Hackathon Demo)
@@ -524,16 +530,36 @@ All source code has been verified:
 | Odometry | ⚠ Unreliable | No encoders; `pose` marked `ok: false` |
 | Low-voltage protection | ❌ Disabled | Hardware issue; manual voltage check required |
 
-### Roadmap
+### Future Plans: Expanding Home Scenarios
 
-| Phase | Goal | Timeline |
-|---|---|---|
-| **Current** | Plant inspection closed-loop + task switching demo | Hackathon submission (2026-10-15) |
-| **Near-term** | Door/window inspection, gas stove check, package delivery reminder | Q4 2026 |
-| **Mid-term** | Elderly fall detection, child safety monitoring, pet status check | Q1-Q2 2027 |
-| **Long-term** | Proactive home service agent with long-term memory | 2027+ |
+Our vision is to build a comprehensive home inspection system that gradually covers more real-world scenarios. After the hackathon, we will focus on:
 
-## Known Limitations
+**Phase 1: Core Scenario Refinement (Q4 2026)**
+- Improve plant inspection accuracy with better lighting handling
+- Add multi-plant inspection in a single task
+- Enhance navigation reliability with visual landmarks
+
+**Phase 2: New Home Scenarios (Q1 2027)**
+- **Door/Window Inspection** — Verify if doors and windows are properly closed
+- **Gas Stove Safety Check** — Detect if stove knobs are in the off position
+- **Package Delivery Alert** — Monitor entrance area for delivered packages
+- **Room Temperature Monitoring** — Check thermostat readings and report anomalies
+
+**Phase 3: Advanced Care Scenarios (Q2-Q3 2027)**
+- **Elderly Fall Detection** — Use pose estimation to detect falls and alert caregivers
+- **Child Safety Monitoring** — Identify potentially dangerous situations (e.g., child near stairs)
+- **Pet Status Check** — Monitor pet activity and location throughout the day
+- **Medication Reminder Verification** — Confirm if medication has been taken
+
+**Phase 4: Proactive Intelligence (2027+)**
+- **Long-term Memory** — Learn household patterns and preferences
+- **Predictive Maintenance** — Anticipate issues before they occur (e.g., low battery, plant wilting trends)
+- **Multi-Robot Coordination** — Support multiple robots covering different areas simultaneously
+- **Voice Interaction** — Enable natural conversation with household members
+
+We will debug and expand each scenario iteratively, testing in real home environments and incorporating user feedback. The modular architecture allows new scenarios to be added without modifying the core framework—simply define new visual reasoning rules and task templates.
+
+### Known Limitations
 
 HomeGuard is a **hackathon demo**, not a production system. Known limitations:
 

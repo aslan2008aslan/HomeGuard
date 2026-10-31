@@ -3,7 +3,7 @@
 [English](README.md) | 简体中文
 
 <p align="center">
-  <img src="docs/assets/banner.png" alt="HomeGuard - 家庭服务机器人自主巡检框架" width="100%" />
+  <img src="docs/assets/banner.svg" alt="HomeGuard - 家庭服务机器人自主巡检框架" width="100%" />
 </p>
 
 <div align="center">

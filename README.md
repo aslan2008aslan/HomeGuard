@@ -3,7 +3,7 @@
 English | [简体中文](README.zh-CN.md)
 
 <p align="center">
-  <img src="docs/assets/banner.png" alt="HomeGuard - Autonomous Inspection Framework for Home Service Robots" width="100%" />
+  <img src="docs/assets/banner.svg" alt="HomeGuard - Autonomous Inspection Framework for Home Service Robots" width="100%" />
 </p>
 
 <div align="center">

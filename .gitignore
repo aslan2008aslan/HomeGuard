@@ -1,0 +1,44 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build outputs
+dist/
+build/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment
+.env
+.env.local
+
+# Credentials (never commit)
+*.ppk
+*.pem
+*.key
+*credentials*
+
+# Diagnostics
+agh-diagnostics-*.zip
+
+# Videos (too large for GitHub)
+*.mp4
+*.avi
+*.mov
+
+# Archives (too large for GitHub)
+*.zip
+
+# Temp files
+*.tmp
+*~

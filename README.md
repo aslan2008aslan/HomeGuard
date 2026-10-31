@@ -17,9 +17,9 @@ English | [简体中文](README.zh-CN.md)
 <img src="https://img.shields.io/badge/platform-Windows%20%7C%20Linux-339933" alt="Platform: Windows | Linux" />
 <img src="https://img.shields.io/badge/hardware-TurboPi%20(Raspberry%20Pi%205)-3b8fff" alt="Hardware: TurboPi (Raspberry Pi 5)" />
 
-[Quickstart](#quickstart) · [Architecture](#architecture) · [Demo Video](#demo-video) · [Integration Standards](#integration-standards) · [Documentation](docs/)
+[Quickstart](docs/guide/quickstart.md) · [Architecture](docs/develop/architecture.md) · [Demo Videos](#demo-videos) · [Integration Standards](docs/develop/mhs-integration.md) · [Deployment](docs/guide/deployment.md)
 
-Hackathon Demo · [Source Code](#source-code) · [Apache-2.0](LICENSE)
+Hackathon Demo · [Source Code](src/) · [Apache-2.0](LICENSE)
 
 </div>
 
@@ -50,7 +50,7 @@ HomeGuard solves this with a **universal task engine** that accepts natural lang
 <summary><kbd>Contents</kbd></summary>
 
 - [Project Overview](#project-overview)
-- [Demo Video](#demo-video)
+- [Demo Videos](#demo-videos)
 - [Architecture](#architecture)
 - [Integration Standards](#integration-standards)
 - [Quickstart](#quickstart)

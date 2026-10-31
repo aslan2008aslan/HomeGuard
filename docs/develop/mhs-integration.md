@@ -1,5 +1,7 @@
 # MHS Integration Guide
 
+> 本文档另有[中文版本](mhs-integration.zh-CN.md)。
+
 This guide explains how to integrate new devices with HomeGuard using the Model Hardware Standard (MHS) protocol.
 
 ## Overview

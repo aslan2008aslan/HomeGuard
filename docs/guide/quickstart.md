@@ -1,5 +1,7 @@
 # HomeGuard Quickstart Guide
 
+> 本文档另有[中文版本](quickstart.zh-CN.md)。
+
 This guide walks you through deploying HomeGuard on your local machine.
 
 ## Prerequisites

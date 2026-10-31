@@ -1,5 +1,7 @@
 # HomeGuard Deployment Guide
 
+> 本文档另有[中文版本](deployment.zh-CN.md)。
+
 This guide covers deploying HomeGuard in a production-like environment.
 
 ## Prerequisites

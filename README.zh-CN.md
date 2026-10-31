@@ -17,9 +17,9 @@
 <img src="https://img.shields.io/badge/platform-Windows%20%7C%20Linux-339933" alt="平台：Windows | Linux" />
 <img src="https://img.shields.io/badge/hardware-TurboPi%20(Raspberry%20Pi%205)-3b8fff" alt="硬件：TurboPi（树莓派 5）" />
 
-[快速开始](#快速开始) · [架构介绍](#架构介绍) · [演示视频](#演示视频) · [集成标准](#集成标准) · [文档](docs/)
+[快速开始](docs/guide/quickstart.zh-CN.md) · [架构介绍](docs/develop/architecture.zh-CN.md) · [演示视频](#演示视频) · [集成标准](docs/develop/mhs-integration.zh-CN.md) · [部署指南](docs/guide/deployment.zh-CN.md)
 
-黑客松演示 · [源码](#源码) · [Apache-2.0](LICENSE)
+黑客松演示 · [源码](src/) · [Apache-2.0](LICENSE)
 
 </div>
 

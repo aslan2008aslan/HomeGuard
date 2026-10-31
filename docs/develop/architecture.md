@@ -1,5 +1,7 @@
 # HomeGuard Architecture
 
+> 本文档另有[中文版本](architecture.zh-CN.md)。
+
 This document describes the system architecture of HomeGuard.
 
 ## Overview
